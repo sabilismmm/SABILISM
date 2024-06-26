@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffef7;
+    background-image: url('path/to/your/background.jpg'); /* Ganti dengan path gambar background Anda */
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #bf1515;
+    color: white;
+    padding: 20px 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px; /* Menentukan lebar maksimum header */
+    margin: 0 auto; /* Untuk sentralisasi header */
+    padding: 0 20px; /* Untuk margin dalam (opsional) */
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+}
+.site-name {
+    font-family: 'Futura', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    flex-grow: 1;
+}
+
+.site-name a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #bf1515;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+nav ul li .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+nav ul li .dropdown-content a:hover {
+    background-color: #e60000;
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    margin: 0 10%;
+    padding: 20px;
+    background-color: rgba(255, 255, 247, 0.9);
+    border-radius: 10px;
+}
+
+.welcome h2 {
+    font-family: 'Futura', sans-serif;
+    font-size: 72px; /* Ukuran font yang sangat besar */
+    text-align: center;
+    margin-top: 0;
+}
+
+.profile {
+    max-width: 600px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.profile h2 {
+    font-family: 'Futura', sans-serif;
+    font-size: 32px;
+}
+
+.profile-picture {
+    width: 40%; /* Ukuran gambar profil */
+    height: 40%;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.book-covers h2 {
+    font-family: 'Futura', sans-serif;
+    font-size: 72px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.cover-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cover-gallery img {
+    width: 30%;
+    margin: 1%;
+    border-radius: 10px;
+}
+
+.back-button {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #bf1515;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-button:hover {
+    background-color: #e60000;
+}
+
+.illustrations {
+    margin: 20px 10%;
+    padding: 20px;
+    background-color: rgba(255, 255, 247, 0.9);
+    border-radius: 10px;
+}
+
+.illustrations h2 {
+    font-family: 'Futura', sans-serif;
+    font-size: 72px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.illustration {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.illustration img {
+    width: 100%; /* Gambar akan mengisi lebar container */
+    max-width: 100%; /* Tapi tidak melebihi lebar aslinya */
+    height: auto; /* Menjaga aspek ratio gambar */
+    border-radius: 10px;
+}
